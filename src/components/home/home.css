@@ -1,0 +1,29 @@
+.home_container{
+    width: 100%;
+    height: 100%;
+}
+
+.frame{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.home_container{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 5rem 0;
+}
+
+.filterByAmt{
+    height: 100%;
+    padding: 3rem 0;
+}
+
+.check{
+    margin: 1rem 0.5rem;
+}
