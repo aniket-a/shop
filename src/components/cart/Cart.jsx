@@ -14,9 +14,9 @@ const Cart = () => {
     setCart(cartItem); 
   }, [cartItem]);
 
-  const handleRemove = (item)=>{
-      dispatch(remove(item.id))
-  }
+  const handleRemove = (item) => {
+    dispatch(remove(item.id));
+  };
 
   return (
     <div className='container'>
@@ -24,9 +24,9 @@ const Cart = () => {
         cart.map((item, i)=>{
           return(
             <div className="box" key={i}>
-              <div className="img"><img src={item.image} alt="" /></div>
-              <div className="title">{item.title}</div>
-              <div className="price">Rs.{item.price}/-</div>
+              <div className="img"><img src={item?.image} alt="" /></div>
+              <div className="title">{item?.title}</div>
+              <div className="price">Rs.{item?.price}/-</div>
               <IoMdClose className='close' onClick={()=> handleRemove(item)} />
             </div>
           )

@@ -13,20 +13,20 @@ const Card = ({ item }) => {
   return (
     <div className="card">
       {item &&
-        item.image && ( // Check if 'item' and 'item.image' are defined
+        item.image && ( 
           <div className="img">
             <img src={item.image} alt="" />
           </div>
         )}
       {item &&
-        item.title && ( // Check if 'item' and 'item.title' are defined
+        item.title && ( 
           <div className="title">{item.title}</div>
         )}
       {item &&
-        item.price && ( // Check if 'item' and 'item.price' are defined
+        item.price && ( 
           <div className="price">RS.{item.price}/-</div>
         )}
-      {item && ( // Check if 'item' is defined
+      {item && ( 
         <button className="addBtn" onClick={() => handleCart(item)}>
           ADD TO CART
         </button>
